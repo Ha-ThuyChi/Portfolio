@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+/* Navigation */
+nav {
+    padding: 20px;
+    text-align: right;
+    font-size: 17px;
+}
+.nav-link {
+    background-color: #C0DBEA;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 20px;
+    transition: all 0.2s linear;
+}
+.nav-link:hover, .nav-link-active:hover {
+    background-color: #fbaabe;
+}
+
+.nav-link-active {
+    background-color: #fb7395;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 20px;
+    transition: all 0.2s linear;
+}

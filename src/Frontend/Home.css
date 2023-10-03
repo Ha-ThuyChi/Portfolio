@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+body {
+    background-color: #FFF0F5;
+    font-family: 'Raleway', 'Times New Roman';
+}
+
+/* Introduction */
+.intro {
+    display: flex;
+    justify-content: center;
+    margin: 10vh;
+}
+.intro-text {
+    display: flex;
+    flex-direction: column;
+}
+.intro-text .name {
+    display: flex;
+    flex-direction: row;
+}
+.name h2 {
+    color: rgb(134, 134, 134);
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.intro-image {
+    height: 50vh;
+    border-radius:50%;
+    border: 5px solid #aacbdc;
+}
