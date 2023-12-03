@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Ha-ThuyChi/Portfolio.git/static/css/main.78b1938d.css",
+    "main.js": "/Ha-ThuyChi/Portfolio.git/static/js/main.793ae9d1.js",
+    "static/js/787.60266217.chunk.js": "/Ha-ThuyChi/Portfolio.git/static/js/787.60266217.chunk.js",
+    "static/media/profile_image.jpg": "/Ha-ThuyChi/Portfolio.git/static/media/profile_image.a2923a7392752b705e28.jpg",
+    "index.html": "/Ha-ThuyChi/Portfolio.git/index.html",
+    "main.78b1938d.css.map": "/Ha-ThuyChi/Portfolio.git/static/css/main.78b1938d.css.map",
+    "main.793ae9d1.js.map": "/Ha-ThuyChi/Portfolio.git/static/js/main.793ae9d1.js.map",
+    "787.60266217.chunk.js.map": "/Ha-ThuyChi/Portfolio.git/static/js/787.60266217.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78b1938d.css",
+    "static/js/main.793ae9d1.js"
+  ]
+}
