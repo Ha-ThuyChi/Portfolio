@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from './Frontend/Home';
-import MyProject from './Frontend/MyProject';
-import MyResume from './Frontend/MyResume';
-import GetInTouch from './Frontend/GetInTouch';
+import Home from './Home';
+import MyProject from './MyProject';
+import MyResume from './MyResume';
+import GetInTouch from './GetInTouch';
 
 
 
