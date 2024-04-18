@@ -6,7 +6,7 @@ body {
     font-family: 'Raleway', 'Times New Roman';
 }
 a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -26,8 +26,8 @@ a {
     color: black;
     font-size: 20px;
 }
-.skill-in-project, .intro-project {
-    color: rgb(98, 98, 98);
+.skill-in-project, .intro-project, .link {
+    color: rgb(0, 0, 0);
     font-size: 14px;
 }
 .project1, .project2, .project3 {
@@ -38,9 +38,7 @@ a {
     transition: all 0.2s linear;
     border-radius: 25px;
 }
-.project1:hover, .project2:hover, .project3:hover {
-    background-color: #fbaabe ;
-}
+
 
 /* Contact */
 .contact {

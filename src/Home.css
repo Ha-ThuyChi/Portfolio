@@ -15,13 +15,14 @@ body {
 .intro-text {
     display: flex;
     flex-direction: column;
+    max-width: 20vw;
 }
 .intro-text .name {
     display: flex;
     flex-direction: row;
 }
 .name h2 {
-    color: rgb(134, 134, 134);
+    color: rgb(0, 0, 0);
     padding-top: 10px;
     padding-left: 10px;
 }
@@ -29,4 +30,7 @@ body {
     height: 50vh;
     border-radius:50%;
     border: 5px solid #aacbdc;
+}
+.position {
+    line-height: 1.5;
 }
