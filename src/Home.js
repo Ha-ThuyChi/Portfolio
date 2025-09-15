@@ -31,6 +31,7 @@ export default function Home() {
                     <li><strong>Education:</strong> Bachelor of IT, RMIT University Vietnam</li>
                     <li><strong>Languages:</strong> English, Vietnamese</li>
                     <li><strong>Skills:</strong> JavaScript, TypeScript, Django, Node.js, React</li>
+                    <li><strong>Database and tools:</strong> PostgreSQL, MySQL, RESTful APIs, JWT, Swagger, Git</li>
                 </ul>
             </section>
             <section id="projects">
