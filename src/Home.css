@@ -1,36 +1,324 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600,800&display=swap');
 
 body {
     background-color: #FFF0F5;
     font-family: 'Raleway', 'Times New Roman';
 }
-
-/* Introduction */
-.intro {
-    display: flex;
-    justify-content: center;
-    margin: 10vh;
+html {
+  scroll-behavior: smooth;
 }
-.intro-text {
+section {
+    scroll-margin-top: 80px; /* height of your nav + some spacing */
+}
+
+/* Intro Section */
+#intro {
     display: flex;
     flex-direction: column;
-    max-width: 20vw;
+    justify-content: center;
+    align-items: center;      /* center everything */
+    min-height: 60vh;         /* take some vertical space */
+    margin: 8vh auto;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 20px;
 }
-.intro-text .name {
-    display: flex;
-    flex-direction: row;
+
+/* Name (Main Heading) */
+.intro-text .name h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #1a1a1a;
+    position: relative;
+    margin-bottom: 20px;
 }
-.name h2 {
-    color: rgb(0, 0, 0);
-    padding-top: 10px;
-    padding-left: 10px;
+
+.intro-text .name h1::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: #4a90e2;
+    border-radius: 2px;
 }
-.intro-image {
-    height: 50vh;
-    border-radius:50%;
-    border: 5px solid #aacbdc;
-}
+
+/* Position / About text */
 .position {
-    line-height: 1.5;
+    max-width: 800px;
+    line-height: 1.8;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+/* Highlighted keywords */
+.position strong {
+    color: #003e86;
+    font-weight: 600;
+}
+
+
+/* About */
+#about {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #333;
+    text-align: left;
+}
+
+#about h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#about h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 50px;
+    height: 3px;
+    background: #4a90e2;
+    border-radius: 2px;
+}
+
+#about ul {
+    padding-left: 20px;
+    /* list-style-type: "▹ "; */
+    color: #173f5f;
+}
+
+
+/* Projects Section */
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 1.2rem;
+    padding: 40px 0;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #4a90e2, #50c9ce);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Project Card */
+.project1, .project2, .project3 {
+    position: relative; /* needed for absolute positioning */
+    width: 70vw;
+    margin: 20px 0;
+    padding: 25px 30px;
+    background: linear-gradient(145deg, #d7e9f5, #b0cfe0);
+    transition: all 0.3s ease-in-out;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.project1:hover, .project2:hover, .project3:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+/* Logo container */
+.project-logo-container {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    flex-direction: row; /* stack logos vertically */
+    gap: 8px;               /* space between logos */
+    text-align: center;
+    font-size: 1.5rem;          /* adjust size */
+    font-weight: 700;
+    color: rgb(0, 0, 0);   /* subtle / decorative */
+    margin: 20px 5px;
+}
+
+/* Individual logos */
+.project-logo-sticker {
+    height: 60px;       /* adjust as needed */
+    width: auto;
+    border-radius: 8px; /* optional rounded corners */
+    /* box-shadow: 0 3px 8px rgba(0,0,0,0.2); */
+    object-fit: contain;
+}
+
+
+/* Project Title */
+.name-project {
+    color: #1a1a1a;
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 10px;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column; /* stack title + position */
+}
+
+.name-project::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 50px;
+    height: 3px;
+    background: #4a90e2;
+    border-radius: 3px;
+}
+
+/* company logo */
+.project-logo {
+    height: 30px;         /* subtle size */
+    margin-left: 10px;    /* space from title/subtitle */
+    vertical-align: middle;
+    object-fit: contain;
+    font-size: small;
+    display: inline-block
+}
+
+/* Subtle Position Subtitle */
+.project-position {
+    font-size: 1.2rem;        /* smaller than title */
+    font-weight: 400;       /* normal weight */
+    color: #555;            /* muted/darker gray */
+    font-style: italic;     /* subtle emphasis */
+    margin-top: 3px;
+}
+
+/* Intro / Skills / Links */
+.intro-project p strong {
+    color: #2a4d69;
+}
+
+.skill-in-project p strong {
+    color: #173f5f;
+    text-decoration: underline;
+}
+
+.skill-in-project, .intro-project, .link {
+    color: #222;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+.project-link {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* contact */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 1.2rem;
+    padding-bottom: 50px;
+}
+.social-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-btn {
+    border-radius: 25px;
+    padding: 12px 20px !important; 
+    text-decoration: none;
+    background-color: #C0DBEA;
+    color: black !important; 
+    font-weight: 300;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    font-size: 1rem;
+}
+
+/* Individual colors */
+.contact-btn.linkedin:hover { 
+    background-color: #0077b5; 
+}
+.contact-btn.gmail:hover { 
+    background-color: #d14836; 
+}
+.contact-btn.phone:hover { 
+    background-color: #4ae24c; 
+}
+
+/* Hover effect */
+.contact-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    opacity: 0.9;
+    color: white !important;
+}
+
+
+
+
+/* resume */
+#resume {
+    text-align: center;
+    margin: 60px 0;
+}
+
+#resume h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#resume h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #4a90e2;
+    border-radius: 2px;
+}
+
+.resume-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #C0DBEA;
+    color: #000;
+    font-weight: 300;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.resume-link:hover {
+    background-color: #fb7395;
+    color: #fff;
+    transform: translateY(-3px);
 }
