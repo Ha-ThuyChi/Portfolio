@@ -269,6 +269,9 @@ section {
 .contact-btn.phone:hover { 
     background-color: #4ae24c; 
 }
+.contact-btn.github:hover { 
+    background-color: #272727; 
+}
 
 /* Hover effect */
 .contact-btn:hover {

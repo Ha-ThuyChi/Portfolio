@@ -32,6 +32,7 @@ export default function Home() {
                     <li><strong>Languages:</strong> English, Vietnamese</li>
                     <li><strong>Skills:</strong> JavaScript, TypeScript, Django, Node.js, React</li>
                     <li><strong>Database and tools:</strong> PostgreSQL, MySQL, RESTful APIs, JWT, Swagger, Git</li>
+                    {/* <li>Check out my code on <a href="https://github.com/Ha-ThuyChi">Github</a>!</li> */}
                 </ul>
             </section>
             <section id="projects">
@@ -143,7 +144,42 @@ export default function Home() {
                         </p>
                     </div>
                 </div>
+                <div class="project3">
+                    <div class="name-project">
+                        Anime Goods Website (Size: 2) Jun 2024 - Aug 2024
+                    </div>
+                    <div class="intro-project">
+                        <p>
+                            <strong>I. What is this project about?</strong><br/>
+                            An <strong>e-commerce platform</strong> focused on anime goods, supporting 3 types of users: 
+                            <strong>buyers, sellers, and administrators</strong>.  
+                            I worked as both <strong>Backend Developer</strong> and <strong>Frontend Developer (API integration & HTML structure)</strong>.  
+                            Some key contributions:
+                        </p>
+                        <ul>
+                            <li>Developed RESTful APIs using <strong>Node.js</strong> and <strong>Express</strong> for user interactions.</li>
+                            <li>Managed database operations with <strong>Sequelize</strong> and <strong>MySQL</strong>.</li>
+                            <li>Handled API integrations and frontend structure to support backend workflows.</li>
+                            <li>Implemented <strong>Authentication & Authorization</strong> to protect user data and enforce role-based actions.</li>
+                        </ul>
+                    </div>
+                    <div class="skill-in-project">
+                        <p><strong>II. Skills:</strong></p>
+                        <ul>
+                            <li>Programming Languages & Frameworks: Node.js (Express), ReactJS</li>
+                            <li>Database: MySQL with Sequelize</li>
+                            <li>Tools: RESTful APIs, JWT, CSS</li>
+                        </ul>
 
+                    </div>
+                    <div class="link">
+                        <p>
+                            <u>Link:</u><br/>
+                            <a class="project-link" href="https://github.com/Ha-ThuyChi/ecommerce-platform.git">GitHub link</a><br/>
+                            {/* <a class="project-link" href="#">Project link: #</a> */}
+                        </p>
+                    </div>
+                </div>
                 </div>
             </section>
             <section id="resume">
@@ -160,6 +196,9 @@ export default function Home() {
                     </a>
                     <a className="contact-btn phone" href="tel:+84813966019">
                         <i className="fas fa-phone"></i> Phone
+                    </a>
+                    <a className="contact-btn github" href="https://github.com/Ha-ThuyChi">
+                        <i className="fa-brands fa-github"></i> GitHub
                     </a>
                 </div>
             </section>
