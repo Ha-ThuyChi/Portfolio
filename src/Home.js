@@ -3,20 +3,22 @@ import "./Home.css";
 import PlatoLogo from "./platoscience-logo.png"; 
 import RMITLogo from "./rmit.png"
 import TwendeeLogo from "./twendee.png"
+import NABLogo from "./nab.jpg";
 
 export default function Home() {
     return (
         <div>
             <Header/>
             <section id="intro">
-                <div class="intro-text">
-                    <div class="name">
+                <div className="intro-text">
+                    <div className="name">
                     <h1>HA THUY CHI</h1>
                     </div>
-                    <div class="position">
+                    <div className="position">
                     <p>
-                        Hi, I’m Chi, a backend developer. I’ve built APIs using <strong>JavaScript, TypeScript, and Django</strong>.  
-                        I love turning complex problems into clean solutions, and I quickly adapt to new tools and languages.
+                        Hi, My name is Chi, I am recent graduate Information Technology student at RMIT University. 
+                        <br/>I’ve worked with JavaScript and Django to build APIs and backend features for academic and real-world projects. 
+                        I enjoy learning practical technologies and improving my problem-solving skills through hands-on development.
                     </p>
                     </div>
                 </div>
@@ -24,7 +26,7 @@ export default function Home() {
             <section id="about">
                 <h2>About Me</h2>
                 <p>
-                    I’m a final-year Information Technology student at <strong>RMIT University</strong>, focusing on backend and web development.  
+                    I’m recent graduate Information Technology student at <strong>RMIT University</strong>, focusing on backend and web development.  
                     I speak <strong>English</strong> and <strong>Vietnamese</strong>.
                 </p>
                 <ul>
@@ -37,14 +39,54 @@ export default function Home() {
             </section>
             <section id="projects">
                 <h2>Projects and Experience</h2>
-                <div class="projects">
-                    <div class="project1">
-                        <div class="name-project">
-                            Individualized Brain Stimulation - RMIT University & PlatoScience (Mar 2025 - Sep 2025)
-                            <span class="project-position">Backend Developer</span>
+                <div className="projects">
+                    <div className="project1">
+                        <div className="name-project">
+                            NAB Innovation Centre Vietnam - WeCamp Program - Software Engineer (Dec 2025 - March 2026)
                         </div>
 
-                        <div class="intro-project">
+                        <div className="intro-project">
+                            <ul>
+                                <li>
+                                    Trained in JavaScript, React, Node.js, Express, SQL/NoSQL databases, testing fundamentals, and SDLC practices
+                                </li>
+
+                                <li>
+                                    Applied DSA concepts, Big-O analysis, and coding exercises to improve problem-solving and code efficiency
+                                </li>
+
+                                <li>
+                                    Worked with Agile/Scrum workflows, Git version control, and collaborative software development
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div className="skill-in-project">
+                            <p><strong>Key Learnings:</strong></p>
+                            <ul>
+                                <li>JS Foundation</li>
+                                <li>Data Structure & Algorithms</li>
+                                <li>OS and Networking basics</li>
+                                <li>React, Node.js, database with SQL and NoSQL</li>
+                                <li>SDLC Development Process</li>
+                            </ul>
+                        </div>
+                        {/* <div className="link">
+                            <p>
+                                <strong>Project link: </strong><a className="project-link" href="https://www.rmitvn-showcase.com/ccrt">Individualized Brain Stimulation</a>
+                            </p>
+                        </div> */}
+                        <div className="project-logo-container">
+                            <img className="project-logo-sticker" src={NABLogo} alt="NAB Innovation Centre Vietnam Logo" />
+                        </div>
+                    </div>
+                    <div className="project2">
+                        <div className="name-project">
+                            Individualized Brain Stimulation - RMIT University & PlatoScience (Mar 2025 - Sep 2025)
+                            <span className="project-position">Backend Developer</span>
+                        </div>
+
+                        <div className="intro-project">
                             <p>
                                 <strong>I. What is this project about?</strong><br/>
                                 This project focuses on human mental health and is a collaboration between <strong>RMIT University's Capstone team</strong> and <strong>PlatoScience</strong>. 
@@ -60,7 +102,7 @@ export default function Home() {
                             </ul>
 
                         </div>
-                        <div class="skill-in-project">
+                        <div className="skill-in-project">
                             <p><strong>II. Skills:</strong></p>
                             <ul>
                                 <li>Programming Languages & Frameworks: Django REST Framework, React Native</li>
@@ -68,9 +110,9 @@ export default function Home() {
                                 <li>Tools: Swagger, Serializers, JWT, MVC pattern</li>
                             </ul>
                         </div>
-                        <div class="link">
+                        <div className="link">
                             <p>
-                                <strong>Project link: </strong><a class="project-link" href="https://www.rmitvn-showcase.com/ccrt">Individualized Brain Stimulation</a>
+                                <strong>Project link: </strong><a className="project-link" href="https://www.rmitvn-showcase.com/ccrt">Individualized Brain Stimulation</a>
                             </p>
                         </div>
                         <div className="project-logo-container">
@@ -78,19 +120,21 @@ export default function Home() {
                             <img className="project-logo-sticker" src={PlatoLogo} alt="PlatoScience Logo" />
                         </div>
                     </div>
-                  <div class="project2">
-                    <div class="name-project">
+                  <div className="project3">
+                    <div className="name-project">
                         JavaScript Dev Intern - Twendee Software (Sep 2024 - Nov 2024)
                     </div>
-                    <div class="intro-project">
+                    <div className="intro-project">
                         <p>
-                            <strong>I. What is this project about?</strong><br/>
-                            During my internship at <strong>Twendee Software</strong>, I developed <strong>API endpoints</strong> using <strong>NestJS, PostgreSQL, Prisma,</strong> and <strong>Swagger</strong>, implementing core user workflows.  
-                            I also contributed to frontend development with <strong>ReactJS</strong> and <strong>NextJS</strong>, and integrated APIs into client-side applications.  
+                            During my internship at <strong>Twendee Software</strong>, 
+                            I developed <strong>API endpoints</strong> using <strong>NestJS, PostgreSQL, Prisma,</strong> and <strong>Swagger</strong>, 
+                            implementing core user workflows.  
+                            I also contributed to frontend development with <strong>ReactJS</strong> and <strong>NextJS</strong>, 
+                            and integrated APIs into client-side applications.  
                         </p>
                     </div>
-                    <div class="skill-in-project">
-                        <p><strong>II. Skills:</strong></p>
+                    <div className="skill-in-project">
+                        <p><strong>Key Learnings:</strong></p>
                         <ul>
                             <li>Programming Languages & Frameworks: NestJS, ReactJS, NextJS</li>
                             <li>Database: PostgreSQL, Prisma</li>
@@ -100,19 +144,19 @@ export default function Home() {
                     <div className="project-logo-container">
                         <img className="project-logo-sticker" src={TwendeeLogo} alt="Twendee" />
                     </div>
-                {/* <div class="link">
+                {/* <div className="link">
                     <p>
                         <u>Link:</u><br/>
-                        <a class="project-link" href="https://github.com/Ha-ThuyChi/ecommerce-platform.git">GitHub link</a><br/>
-                        <a class="project-link" href="#">Project link: #</a>
+                        <a className="project-link" href="https://github.com/Ha-ThuyChi/ecommerce-platform.git">GitHub link</a><br/>
+                        <a className="project-link" href="#">Project link: #</a>
                     </p>
                 </div> */}
                 </div>
-                <div class="project3">
-                    <div class="name-project">
+                {/* <div className="project3">
+                    <div className="name-project">
                         Anime Goods Website (Size: 2) Jun 2024 - Aug 2024
                     </div>
-                    <div class="intro-project">
+                    <div className="intro-project">
                         <p>
                             <strong>I. What is this project about?</strong><br/>
                             An <strong>e-commerce platform</strong> focused on anime goods, supporting 3 types of users: 
@@ -127,7 +171,7 @@ export default function Home() {
                             <li>Implemented <strong>Authentication & Authorization</strong> to protect user data and enforce role-based actions.</li>
                         </ul>
                     </div>
-                    <div class="skill-in-project">
+                    <div className="skill-in-project">
                         <p><strong>II. Skills:</strong></p>
                         <ul>
                             <li>Programming Languages & Frameworks: Node.js (Express), ReactJS</li>
@@ -136,54 +180,18 @@ export default function Home() {
                         </ul>
 
                     </div>
-                    <div class="link">
+                    <div className="link">
                         <p>
                             <u>Link:</u><br/>
-                            <a class="project-link" href="https://github.com/Ha-ThuyChi/ecommerce-platform.git">GitHub link</a><br/>
-                            {/* <a class="project-link" href="#">Project link: #</a> */}
+                            <a className="project-link" href="https://github.com/Ha-ThuyChi/ecommerce-platform.git">GitHub link</a><br/>
+                        
                         </p>
                     </div>
-                </div>
-                <div class="project3">
-                    <div class="name-project">
-                        Anime Goods Website (Size: 2) Jun 2024 - Aug 2024
-                    </div>
-                    <div class="intro-project">
-                        <p>
-                            <strong>I. What is this project about?</strong><br/>
-                            An <strong>e-commerce platform</strong> focused on anime goods, supporting 3 types of users: 
-                            <strong>buyers, sellers, and administrators</strong>.  
-                            I worked as both <strong>Backend Developer</strong> and <strong>Frontend Developer (API integration & HTML structure)</strong>.  
-                            Some key contributions:
-                        </p>
-                        <ul>
-                            <li>Developed RESTful APIs using <strong>Node.js</strong> and <strong>Express</strong> for user interactions.</li>
-                            <li>Managed database operations with <strong>Sequelize</strong> and <strong>MySQL</strong>.</li>
-                            <li>Handled API integrations and frontend structure to support backend workflows.</li>
-                            <li>Implemented <strong>Authentication & Authorization</strong> to protect user data and enforce role-based actions.</li>
-                        </ul>
-                    </div>
-                    <div class="skill-in-project">
-                        <p><strong>II. Skills:</strong></p>
-                        <ul>
-                            <li>Programming Languages & Frameworks: Node.js (Express), ReactJS</li>
-                            <li>Database: MySQL with Sequelize</li>
-                            <li>Tools: RESTful APIs, JWT, CSS</li>
-                        </ul>
-
-                    </div>
-                    <div class="link">
-                        <p>
-                            <u>Link:</u><br/>
-                            <a class="project-link" href="https://github.com/Ha-ThuyChi/ecommerce-platform.git">GitHub link</a><br/>
-                            {/* <a class="project-link" href="#">Project link: #</a> */}
-                        </p>
-                    </div>
-                </div>
-                </div>
+                </div> */}
+            </div>
             </section>
             <section id="resume">
-                <h2>Resume: </h2> <a href="/files/Ha Thuy Chi - Backend Developer.pdf" download class="resume-link">Download My Resume</a>
+                <h2>Resume: </h2> <a href="/files/Ha Thuy Chi - Software Engineer.pdf" download className="resume-link">Download My Resume</a>
             </section>
             <section id="contact">
                 <h2>Get in touch with me via:</h2>
