@@ -4,9 +4,6 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from './Home';
-import MyProject from './MyProject';
-import MyResume from './MyResume';
-import GetInTouch from './GetInTouch';
 
 
 
@@ -15,18 +12,6 @@ const router = new createBrowserRouter([
     path: "/",
     element: <Home/>
   },
-  {
-    path:"/MyProjects",
-    element: <MyProject/>
-  },
-  {
-    path: "/MyResume",
-    element: <MyResume/>
-  },
-  {
-    path: "/Contact",
-    element: <GetInTouch/>
-  }
 ])
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
